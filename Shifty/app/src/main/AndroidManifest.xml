@@ -22,6 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EmployeeView" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ManagerListActivity"
+            android:label="@string/title_manager_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hsesslingen_aim1.shifty.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ManagerDetailActivity"
+            android:label="@string/title_manager_detail"
+            android:parentActivityName=".ManagerListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hsesslingen_aim1.shifty.ManagerListActivity" />
+        </activity>
     </application>
 
 </manifest>
